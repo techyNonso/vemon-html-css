@@ -95,11 +95,10 @@ body {
 header {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-image: url("../img/header3.jpg");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 .headershade {
   position: absolute;
@@ -114,7 +113,7 @@ header {
 .headershade .headerContent {
   width: 100%;
   position: absolute;
-  top: 200px;
+  top: 300px;
   color: #fff;
   text-align: center;
 }
@@ -124,11 +123,17 @@ header {
   top: 0;
   z-index: 1000;
 }
-.navBar a {
+#myLogo {
+  font-family: Tahoma;
+  font-size: 1.5rem;
   color: #fff;
 }
-.nav-item:hover {
+.nav-item a {
+  color: #fff !important;
+}
+.nav-item a:hover {
   background-color: rgba(0, 0, 0, 0.6);
+  color: #fff !important;
 }
 #active {
   background-color: rgba(0, 0, 0, 0.6);
