@@ -111,11 +111,11 @@
         </div>
 
         <ul class="lisst-unstyled components">
-          <li class="active">
-            <a href="#">Dashboard</a>
+          <li>
+            <a href="dashboard.html">Dashboard</a>
           </li>
 
-          <li>
+          <li class="active">
             <a
               href="#stockSubmenu"
               data-toggle="collapse"
@@ -125,16 +125,16 @@
             >
             <ul class="collapse lisst-unstyled" id="stockSubmenu">
               <li>
-                <a href="#">All</a>
+                <a href="allStock.html">All</a>
               </li>
               <li>
-                <a href="#">Expired</a>
+                <a href="expiredStock.html">Expired</a>
+              </li>
+              <li class="active">
+                <a href="exhaustedStock.html">Exhausted</a>
               </li>
               <li>
-                <a href="#">Exhausted</a>
-              </li>
-              <li>
-                <a href="#">Activities</a>
+                <a href="stockActivities.html">Activities</a>
               </li>
             </ul>
           </li>
@@ -255,18 +255,62 @@
           </div>
         </div>
 
-        <p class="pl-5 pt-2 text-right">
-          <span><strong>Branches</strong> : 1 of 4 </span>
-        </p>
+        <div class="row mt-3 pl-3 pr-3">
+            <div class="col-md-6 pb-2">
+              <span><strong>Branches</strong> : 1 of 4 </span>
+            </div>
+  
+            <div class="col-md-6 pb-2">
+              <form action="" class="form">
+                <div class="form-group">
+                  <input type="text" placeholder="Search" class="form-control" />
+                </div>
+              </form>
+            </div>
+          </div>
 
         <!-- ==========================================  -->
         <!-- main content goes here -->
         <!-- ==========================================  -->
         <div class="main-content mt-4 pl-4">
-          main
+          <div class="row table-responsive boxUp p-3">
+            <table class="table table-sm table-striped table-borderless">
+              <thead>
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+
+                <th>Action</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>093033</td>
+                  <td>Paracetamol</td>
+                  <td>10</td>
+
+                  <td>
+                    <button class="btn btn-danger btn-sm">Remove</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <ul class="pagination justify-content-end pr-3 pt-3">
+            <li class="page-item">
+              <a href="#" class="page-link">Previous</a>
+            </li>
+            <li class="page-item active">
+              <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+              <a href="#" class="page-link">Next</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+
     <!-- ==========================================  -->
     <!-- footer -->
     <!-- ==========================================  -->

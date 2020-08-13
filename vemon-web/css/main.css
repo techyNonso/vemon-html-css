@@ -204,6 +204,15 @@ ul ul li {
   transition: all 0.3s;
   background-color: #fafafa;
 }
+.boxUp {
+  -webkit-box-shadow: 2px 2px 7px 0px #c0c0c0;
+  -moz-box-shadow: 2px 2px 7px 0px #c0c0c0;
+  box-shadow: 2px 2px 7px 0px #c0c0c0;
+  background-color: #fff;
+}
+.hide {
+  display: none;
+}
 /* ==========================================================================
      Helper classes
      ========================================================================== */
@@ -275,16 +284,22 @@ ul ul li {
   clear: both;
 }
 /* ==========================================================================
-     for desk tops
+     for tablets and lower
      ========================================================================== */
 @media (max-width: 768px) {
   #sidebar {
     margin-left: -250px;
+    height: 100vh;
+    z-index: 1000;
+    position: fixed;
   }
   #sidebar.active {
     margin-left: 0;
   }
 }
+/* ==========================================================================
+     for desktops alone
+     ========================================================================== */
 @media only screen and (min-width: 320px) {
   /* Style adjustments for viewports that meet the condition */
 }
