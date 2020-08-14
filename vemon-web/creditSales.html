@@ -30,6 +30,8 @@
       rel="stylesheet"
       href="froala/css/froala_blocks.min.css"
     />
+    <link rel="stylesheet" href="datePicker/style.css" />
+    <link rel="stylesheet" href="datePicker/picker.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
 
@@ -115,7 +117,7 @@
             <a href="dashboard.html">Dashboard</a>
           </li>
 
-          <li class="active">
+          <li>
             <a
               href="#stockSubmenu"
               data-toggle="collapse"
@@ -139,7 +141,7 @@
             </ul>
           </li>
 
-          <li>
+          <li class="active">
             <a
               href="#salesSubmenu"
               data-toggle="collapse"
@@ -155,7 +157,7 @@
                 <a href="cashSales.html">Cash</a>
               </li>
 
-              <li>
+              <li class="active">
                 <a href="creditSales.html">Credit</a>
               </li>
               <li>
@@ -277,14 +279,35 @@
         <!-- ==========================================  -->
         <div class="main-content mt-4 pl-4">
           <div class="row table-responsive boxUp p-3">
+            <div class="container px-1 px-sm-5 mx-auto mb-4">
+              <form autocomplete="off">
+                <span class="sortBox">sort By date:</span>
+                <div class="flex-row d-flex justify-content-center">
+                  <div class="col-lg-6 col-11">
+                    <div class="input-group input-daterange">
+                      <input
+                        type="text"
+                        class="form-control input1"
+                        placeholder="Start Date"
+                        readonly
+                      />
+                      <input
+                        type="text"
+                        class="form-control input2"
+                        placeholder="End Date"
+                        readonly
+                      />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
             <table class="table table-sm table-striped table-borderless">
               <thead>
                 <th>Product Id</th>
                 <th>Product Name</th>
                 <th>Quantity</th>
-                <th>Batches</th>
-                <th>Bought</th>
-                <th>Sold</th>
+                <th>Price</th>
               </thead>
               <tbody>
                 <tr>
@@ -292,22 +315,12 @@
                   <td>Paracetamol</td>
                   <td>10</td>
                   <td>5</td>
-                  <td>1000</td>
-                  <td>1500</td>
                 </tr>
               </tbody>
-              <tfoot>
-                <th>Total</th>
-                <th>200</th>
-                <th>1000</th>
-                <th>90</th>
-                <th></th>
-                <th></th>
-              </tfoot>
             </table>
           </div>
 
-          <ul class="pagination justify-content-end pr-3 pt-3">
+          <ul class="pagination justify-content-end pr-3 pt-4">
             <li class="page-item">
               <a href="#" class="page-link">Previous</a>
             </li>
@@ -318,6 +331,25 @@
               <a href="#" class="page-link">Next</a>
             </li>
           </ul>
+
+          <div class="row table-responsive boxUp p-3 mt-4">
+            <table class="table table-sm table-striped table-borderless">
+              <thead>
+                <th>Total</th>
+
+                <th>Disccount</th>
+                <th>Balance</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>102,000</td>
+
+                  <td>10 %</td>
+                  <td>100</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -342,6 +374,8 @@
     <script src="js/jquery.js"></script>
     <script src="bootstrap/dist/js/bootstrap.js"></script>
 
+    <script src="datePicker/pickerJs.js"></script>
+
     <script>
       $(document).ready(function () {
         $("#sidebarCollapse").on("click", function () {
@@ -354,6 +388,10 @@
           console.log("ok");
           $("#sidebar").toggleClass("active");
           $("#innerSidebarCollapse").toggleClass("hide");
+        });
+        $(".input-daterange").datepicker({
+          format: "dd-mm-yyyy",
+          autoclose: true,
         });
       });
     </script>
