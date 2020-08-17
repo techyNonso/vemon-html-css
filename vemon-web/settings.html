@@ -111,7 +111,7 @@
         </div>
 
         <ul class="lisst-unstyled components">
-          <li class="active">
+          <li >
             <a href="dashboard.html">Dashboard</a>
           </li>
 
@@ -210,7 +210,7 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="active">
             <a href="settings.html">Settings</a>
           </li>
         </ul>
@@ -230,55 +230,125 @@
           </div>
         </nav>
 
-        <div
-          class="row border border-top-0 border-left-0 border-right-0 pb-3 pl-3 pr-2"
-        >
-          <div class="col-4">
-            <form action="">
-              <select
-                name="company"
-                id=""
-                class="custom-select custom-select-sm"
-              >
-                <option value="">Company</option>
-                <option value="companyA">Company A</option>
-                <option value="companyB">Company B</option>
-              </select>
-            </form>
-          </div>
-          <div class="col-4">
-            <form action="">
-              <select
-                name="company"
-                id=""
-                class="custom-select custom-select-sm"
-              >
-                <option value="">Branch</option>
-                <option value="branchA">Branch A</option>
-                <option value="branchB">Branch B</option>
-              </select>
-            </form>
-          </div>
-        </div>
+       
 
-        <div class="row mt-3 pl-3 pr-3">
-          <div class="col-md-6 pb-2">
-            <span><strong>Branches</strong> : 1 of 4 </span>
-          </div>
-
-          <div class="col-md-6 pb-2">
-            <form action="" class="form">
-              <div class="form-group">
-                <input type="text" placeholder="Search" class="form-control" />
-              </div>
-            </form>
-          </div>
-        </div>
+        
         <!-- ==========================================  -->
         <!-- main content goes here -->
         <!-- ==========================================  -->
         <div class="main-content mt-4 pl-4">
-          main
+            <div class="row  mb-4">
+                <div class="col-lg-6  pr-4 pl-4 mb-4">
+                  <div class="boardBearer p-3">
+                    <div class="border border-top-0 border-right-0 border-left-0">
+                      <h5>Stock settings</h5>
+                    </div>
+              
+                    <form action="" class="form mt-3">
+                      <div class="form-field mb-3">
+                        <label for="stockPerc">Stock Limit <strong>( % )</strong></label>
+                        <input
+                          type="number"
+                          id="stockPerc"
+                          min="1"
+                          class="form-control"
+                          placeholder="stock limit"
+                        />
+                        <span class="settingSpan"
+                          >This is maximum percentage stock volume required to triger stock
+                          exhaustion alert</span
+                        >
+                      </div>
+              
+                      <div class="form-field">
+                        <label for="stockExp"
+                          >Expiration Limit <strong>( days )</strong></label
+                        >
+                        <input
+                          type="number"
+                          id="stockExp"
+                          min="1"
+                          class="form-control"
+                          placeholder="expiration limit"
+                        />
+                        <span class="settingSpan"
+                          >This is maximum number of days required to triger stock expiration
+                          alert</span
+                        >
+                      </div>
+              
+                      <div
+                        class="border border-right-0 border-left-0 border-bottom-0 mt-3 text-right"
+                      >
+                        <a
+                          href="#"
+                          class="btn btn-sm btn-primary mt-2"
+                          onclick="submitStockSettings(event)"
+                          >Save</a
+                        >
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="col-lg-6  pr-4 pl-4 mb-4">
+                    <div class="boardBearer p-3">
+                      <div class="border border-top-0 border-right-0 border-left-0">
+                        <h5>User settings</h5>
+                      </div>
+                
+                      <form action="" class="form mt-3">
+                        <div class="form-field mb-3">
+                          <label for="fname">Firstname</label>
+                          <input
+                            type="text"
+                            id="fname"
+                            
+                            class="form-control"
+                            placeholder="Firstname"
+                          />
+                          
+                        </div>
+
+                        <div class="form-field mb-3">
+                            <label for="lname">Lastname</label>
+                            <input
+                              type="text"
+                              id="lname"
+                              
+                              class="form-control"
+                              placeholder="Lastname"
+                            />
+                            
+                          </div>
+
+                          <div class="form-field mb-3">
+                            <label for="email">Email</label>
+                            <input
+                              type="text"
+                              id="email"
+                              
+                              class="form-control"
+                              placeholder="Email"
+                            />
+                            
+                          </div>
+                
+                        
+                
+                        <div
+                          class="border border-right-0 border-left-0 border-bottom-0 mt-3 text-right"
+                        >
+                          <a
+                            href="#"
+                            class="btn btn-sm btn-primary mt-2"
+                            onclick="submitStockSettings(event)"
+                            >Save</a
+                          >
+                        </div>
+                      </form>
+                    </div>
+                  </div>
         </div>
       </div>
     </div>

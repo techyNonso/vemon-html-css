@@ -218,6 +218,101 @@ ul ul li {
   text-align: center;
   padding-bottom: 20px;
 }
+.showBox {
+  height: auto;
+  min-height: 120px;
+  width: 100%;
+  padding-bottom: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 5px 3px #f0f0f0;
+  -moz-box-shadow: 0px 0px 5px 3px #f0f0f0;
+  box-shadow: 0px 0px 5px 3px #f0f0f0;
+}
+.showBox .showChild {
+  height: 50%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 10px;
+  overflow: hidden;
+}
+.showBox .showTop {
+  line-height: 60px;
+}
+.showBox .showTop span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.showBox .showTop #span1 {
+  color: #9b59b6;
+}
+.showBox .showTop #span2 {
+  color: red;
+}
+.showBox .showTop #span3 {
+  color: #2980b9;
+}
+.showBox .showTop #span4 {
+  color: #00c853;
+}
+.showBox .showTop #saleVol {
+  font-size: 1.5rem;
+  color: #9b59b6;
+}
+.showBox .showTop #expVol {
+  font-size: 1.5rem;
+  color: red;
+}
+.showBox .showTop #expenVol {
+  font-size: 1.5rem;
+  color: #2980b9;
+}
+.showBox .showTop #incVol {
+  font-size: 1.5rem;
+  color: #00c853;
+}
+.showBox .showTop #span5 {
+  color: #2980b9;
+}
+.showBox .showTop #stockVol {
+  font-size: 1.5rem;
+  color: #2980b9;
+}
+.showBox .showTop #span6 {
+  color: #0e6251;
+}
+.showBox .showTop #invVol {
+  font-size: 1.5rem;
+  color: #0e6251;
+}
+.showBox .showTop #span7 {
+  color: #cc6633;
+}
+.showBox .showTop #staffVol {
+  font-size: 1.5rem;
+  color: #cc6633;
+}
+.showBox .showTop #span8 {
+  color: #cc0033;
+}
+.showBox .showTop #cusVol {
+  font-size: 1.5rem;
+  color: #cc0033;
+}
+.showBox .showDown {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.boardBearer {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 5px 3px #f0f0f0;
+  -moz-box-shadow: 0px 0px 5px 3px #f0f0f0;
+  box-shadow: 0px 0px 5px 3px #f0f0f0;
+}
+.settingSpan {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
 /* ==========================================================================
      Helper classes
      ========================================================================== */

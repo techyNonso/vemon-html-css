@@ -13,6 +13,7 @@
 
 //variables
 @primary-color: #00c853;
+@sub-text-color: #7f8c8d;
 html {
   color: #222;
   font-size: 1em;
@@ -264,6 +265,125 @@ ul ul li {
   text-align: center;
   padding-bottom: 20px;
 }
+
+.showBox {
+  height: auto;
+  min-height: 120px;
+  width: 100%;
+  padding-bottom: 15px;
+  background-color: #fff;
+
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(240, 240, 240, 1);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(240, 240, 240, 1);
+  box-shadow: 0px 0px 5px 3px rgba(240, 240, 240, 1);
+
+  .showChild {
+    height: 50%;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 10px;
+    overflow: hidden;
+  }
+
+  .showTop {
+    line-height: 60px;
+    span {
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      padding-left: 10px;
+    }
+
+    #span1 {
+      color: #9b59b6;
+    }
+
+    #span2 {
+      color: red;
+    }
+
+    #span3 {
+      color: #2980b9;
+    }
+
+    #span4 {
+      color: @primary-color;
+    }
+    #saleVol {
+      font-size: 1.5rem;
+      color: #9b59b6;
+    }
+
+    #expVol {
+      font-size: 1.5rem;
+      color: red;
+    }
+
+    #expenVol {
+      font-size: 1.5rem;
+      color: #2980b9;
+    }
+
+    #incVol {
+      font-size: 1.5rem;
+      color: @primary-color;
+    }
+
+    #span5 {
+      color: #2980b9;
+    }
+
+    #stockVol {
+      font-size: 1.5rem;
+      color: #2980b9;
+    }
+
+    #span6 {
+      color: #0e6251;
+    }
+
+    #invVol {
+      font-size: 1.5rem;
+      color: #0e6251;
+    }
+
+    #span7 {
+      color: #cc6633;
+    }
+
+    #staffVol {
+      font-size: 1.5rem;
+      color: #cc6633;
+    }
+
+    #span8 {
+      color: #cc0033;
+    }
+
+    #cusVol {
+      font-size: 1.5rem;
+      color: #cc0033;
+    }
+  }
+
+  .showDown {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+.boardBearer {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(240, 240, 240, 1);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(240, 240, 240, 1);
+  box-shadow: 0px 0px 5px 3px rgba(240, 240, 240, 1);
+}
+
+.settingSpan {
+  font-size: 0.9rem;
+  color: @sub-text-color;
+}
+
 /* ==========================================================================
      Helper classes
      ========================================================================== */
