@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="froala/css/froala_blocks.min.css"
+    />
+
+    <link rel="stylesheet" href="datePicker/style.css" />
+    <link rel="stylesheet" href="datePicker/picker.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- ============================================ -->
+    <!-- Header block-->
+    <!-- ============================================ -->
+    <nav
+      class="navbar navbar-expand-lg bg-dark navbar-dark shadow fixed-top navBar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/icon.png" alt="" width="50px" /><span id="myLogo">
+            Vemon</span
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link pl-2" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-2" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-2" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-2" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-2" href="dashboard.html" id="active"
+                >Dashboard</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link pl-2" href="sign-in.html">Sign in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-2" href="sign-up.html">Sign up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-2" href="#">Sign out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ==========================================  -->
+    <!-- layout  box -->
+    <!-- ==========================================  -->
+    <div class="wrapper">
+      <nav id="sidebar">
+        <div class="mt-3 text-right pr-3">
+          <button
+            type="button"
+            id="innerSidebarCollapse"
+            class="btn btn-sm btn-success hide"
+          >
+            <span><i class="fa fa-bars"></i></span>
+          </button>
+        </div>
+
+        <ul class="lisst-unstyled components">
+          <li >
+            <a href="dashboard.html">Dashboard</a>
+          </li>
+
+          <li>
+            <a
+              href="#stockSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Stock</a
+            >
+            <ul class="collapse lisst-unstyled" id="stockSubmenu">
+              <li>
+                <a href="allStock.html">All</a>
+              </li>
+              <li>
+                <a href="expiredStock.html">Expired</a>
+              </li>
+              <li>
+                <a href="exhaustedStock.html">Exhausted</a>
+              </li>
+              <li>
+                <a href="stockActivities.html">Activities</a>
+              </li>
+            </ul>
+          </li>
+
+          <li >
+            <a
+              href="#salesSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Sales</a
+            >
+            <ul class="collapse lisst-unstyled" id="salesSubmenu">
+              <li >
+                <a href="allSales.html" >All</a>
+              </li>
+              <li>
+                <a href="cashSales.html">Cash</a>
+              </li>
+
+              <li>
+                <a href="creditSales.html">Credit</a>
+              </li>
+              <li>
+                <a href="onlineSales.html">Online</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="debts.html">Debts</a>
+          </li>
+          <li>
+            <a href="expenses.html">Expenses</a>
+          </li>
+          <li>
+            <a href="#">Branches</a>
+          </li>
+          <li>
+            <a
+              href="#staffSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Staff</a
+            >
+            <ul class="collapse lisst-unstyled" id="staffSubmenu">
+              <li>
+                <a href="#">List</a>
+              </li>
+              <li>
+                <a href="#">Attendance</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="active">
+            <a
+              href="#reportSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Reports</a
+            >
+            <ul class="collapse lisst-unstyled" id="reportSubmenu">
+              <li>
+                <a href="accountReport.html">Account</a>
+              </li class="active">
+              <li>
+                <a href="productReport.html">Product</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Settings</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="content">
+        <nav class="navbar navbar-expand-lg mt-2 pb-2">
+          <div>
+            <button
+              type="button"
+              id="sidebarCollapse"
+              class="btn btn-sm btn-success"
+            >
+              <span><i class="fa fa-bars"></i></span>
+            </button>
+            <strong class="pl-2">Liscence No: A98BG09DR383</strong>
+          </div>
+        </nav>
+
+        <div
+          class="row border border-top-0 border-left-0 border-right-0 pb-3 pl-3 pr-2"
+        >
+          <div class="col-4">
+            <form action="">
+              <select
+                name="company"
+                id=""
+                class="custom-select custom-select-sm"
+              >
+                <option value="">Company</option>
+                <option value="companyA">Company A</option>
+                <option value="companyB">Company B</option>
+              </select>
+            </form>
+          </div>
+          <div class="col-4">
+            <form action="">
+              <select
+                name="company"
+                id=""
+                class="custom-select custom-select-sm"
+              >
+                <option value="">Branch</option>
+                <option value="branchA">Branch A</option>
+                <option value="branchB">Branch B</option>
+              </select>
+            </form>
+          </div>
+        </div>
+
+        <div class="row mt-3 pl-3 pr-3">
+          <div class="col-md-6 pb-2">
+            <span><strong>Branches</strong> : 1 of 4 </span>
+          </div>
+
+          <div class="col-md-6 pb-2">
+            <form action="" class="form">
+              <div class="form-group">
+                <input type="text" placeholder="Search" class="form-control" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- ==========================================  -->
+        <!-- main content goes here -->
+        <!-- ==========================================  -->
+        <div class="main-content mt-4 pl-4">
+          <div class="row table-responsive boxUp p-3">
+            <div class="container px-1 px-sm-5 mx-auto mb-4">
+              <form autocomplete="off">
+                <span class="sortBox">sort By date:</span>
+                <div class="flex-row d-flex justify-content-center">
+                  <div class="col-lg-6 col-11">
+                    <div class="input-group input-daterange">
+                      <input
+                        type="text"
+                        class="form-control input1"
+                        placeholder="Start Date"
+                        readonly
+                      />
+                      <input
+                        type="text"
+                        class="form-control input2"
+                        placeholder="End Date"
+                        readonly
+                      />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <table class="table table-sm table-striped table-borderless">
+              <thead>
+                <th>Product Id</th>
+                <th>Product Name</th>
+                
+                <th>Sale Volume</th>
+                <th>Percentage Volume</th>
+                <th>Percentage Profit</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>093033</td>
+                  <td>Paracetamol</td>
+                  <td>10</td>
+                  <td>5%</td>
+                  <td>100%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <ul class="pagination justify-content-end pr-3 pt-4">
+            <li class="page-item">
+              <a href="#" class="page-link">Previous</a>
+            </li>
+            <li class="page-item active">
+              <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+              <a href="#" class="page-link">Next</a>
+            </li>
+          </ul>
+
+          
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+    <!-- ==========================================  -->
+    <!-- footer -->
+    <!-- ==========================================  -->
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
+
+   
+
+    <script src="datePicker/pickerJs.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#sidebarCollapse").on("click", function () {
+          console.log("ok");
+          $("#sidebar").toggleClass("active");
+          $("#innerSidebarCollapse").toggleClass("hide");
+        });
+
+        $("#innerSidebarCollapse").on("click", function () {
+          console.log("ok");
+          $("#sidebar").toggleClass("active");
+          $("#innerSidebarCollapse").toggleClass("hide");
+        });
+        $(".input-daterange").datepicker({
+          format: "dd-mm-yyyy",
+          autoclose: true,
+        });
+      });
+    </script>
+  </body>
+</html>
